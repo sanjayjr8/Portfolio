@@ -136,7 +136,7 @@ export default function Home(
 							as="h2"
 							variant="display-strong-xs"
 							wrap="balance">
-							Latest from the blog
+							
 						</Heading>
 					</Flex>
 					<Flex

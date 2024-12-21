@@ -31,7 +31,7 @@ export const Footer = () => {
                     </Text>
                     <Text onBackground="neutral-weak">
                         {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-                        / Build your portfolio with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://once-ui.com/templates/magic-portfolio">Once UI</SmartLink>
+                        / <SmartLink style={{marginLeft: '-0.125rem'}} href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=33iAn2sAAAAJ">sanjayjayachandran08@gmail.com</SmartLink>
                     </Text>
                 </Text>
                 <Flex
