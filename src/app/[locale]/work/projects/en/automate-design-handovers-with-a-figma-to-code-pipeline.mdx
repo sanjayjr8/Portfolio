@@ -1,10 +1,9 @@
 ---
-title: "Automating Design Handovers with a Figma to Code Pipeline"
+title: "Opti Stock: Streamlining Supply Chain Optimization"
 publishedAt: "2024-04-01"
-summary: "Explore the enduring debate between using spaces and tabs for code indentation, and why this choice matters more than you might think."
+summary: "Discover how Opti Stock revolutionizes inventory management with authenticated logins, robust analytics, and sales prediction using ARIMA, enabling companies to optimize their supply chains effectively."
 images:
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/image-03.jpg"
+  - "/images/projects/project-01/co2.png"
 team:
   - name: "John Doe"
     role: "Software Engineer"
@@ -14,30 +13,29 @@ team:
 
 ## Overview
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+Development of Opti Stock, a supply chain optimization system featuring secure authentication for companies, inventory management, and predictive analytics for historical sales.
 
 ## Key Features
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **Authenticated Login**: Implemented a secure login and registration system, allowing companies to register, manage their profiles, and access the platform safely.
+- **Inventory Management**: Companies can add and maintain their inventory through a user-friendly interface, ensuring up-to-date stock levels and accurate records.
+- **Inventory Database**: Utilized MongoDB Atlas to create a robust inventory database that stores detailed information about products and stock levels.
+- **Analytics and Reporting**: Integrated inventory analytics to provide insights into product performance, helping companies make informed business decisions.
+- **Sales Prediction**: Deployed an ARIMA machine learning model via Streamlit for historical sales prediction, enabling companies to forecast demand and manage stock accordingly.
+- **Frontend and Backend Technologies**: Developed the frontend using React and TypeScript, with a Node.js backend to create a seamless and efficient user experience.
 
 ## Technologies Used
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Angular**: For building a responsive and dynamic user interface.
+- **Node.js**: For backend development, handling authentication, and managing server-side logic.
+- **React and TypeScript**: To create a modern, component-based frontend experience.
+- **MongoDB Atlas**: To store and manage inventory data securely in the cloud.
+- **ARIMA Model**: For historical sales prediction, deployed using Streamlit for easy accessibility and visualization.
 
 ## Challenges and Learnings
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+One key challenge was ensuring the system could efficiently handle multiple users while maintaining data integrity and security. This was addressed by implementing robust authentication mechanisms and optimizing database queries. Additionally, integrating the ARIMA model for accurate sales forecasting required extensive testing and calibration, leading to a better understanding of machine learning applications in inventory management.
 
 ## Outcome
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
-
----
-
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+Opti Stock is now a comprehensive supply chain optimization tool that enables companies to manage their inventory efficiently while gaining valuable insights into sales trends. The combination of secured login, real-time inventory analytics, and predictive capabilities ensures companies can make data-driven decisions, improving their overall supply chain management. The system's architecture and technology stack make it scalable, allowing for future enhancements and feature additions.

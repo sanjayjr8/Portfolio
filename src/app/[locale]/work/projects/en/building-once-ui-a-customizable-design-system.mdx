@@ -1,18 +1,18 @@
 ---
-title: "Building Once UI, a Customizable Design System"
+title: "Introducing PlantPal ,A Customizable Solution for Effective Plant Disease Detection and Treatment"
 publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+summary: "PlantPal leverages Roboflow's inference model, Gemini AI, and Python Gradio, along with Google Translation API, to create a powerful, customizable app for detecting plant diseases and providing tailored treatment recommendations."
 images:
-  - "/images/projects/project-01/cover-01.jpg"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
+  - "/images/projects/project-01/c1.png"
+  - "/images/projects/project-01/c2.png"
+  - "/images/projects/project-01/c3.png"
+  - "/images/projects/project-01/c4.png"
 team:
-  - name: "Selene Yu"
+  - name: "Sanjay"
     role: "Software Engineer"
     avatar: "/images/avatar.jpg"
     linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Jane Smith"
+  - name: "Miruthula"
     role: "Product Manager"
     avatar: "/images/projects/project-01/avatar-01.png"
     linkedIn: "https://www.linkedin.com/company/once-ui/"
@@ -20,26 +20,34 @@ team:
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+Development of PlantPal, a powerful and customizable app that enables farmers to easily detect plant diseases through image analysis and receive tailored treatment recommendations along with crop suggestions based on soil details.
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Image Upload and Analysis**: Farmers can take pictures of their crops and upload them to the app, which then triggers a comprehensive analysis workflow..
+- **Roboflow Integration**: Utilized the Roboflow inference model to process the uploaded images, enhancing the accuracy of disease detection using CNN VGG19 and transitioning to Gemini Vision for improved results.
+- **Soil Detail Input for Crop Recommendations**: Farmers can enter soil details (such as pH, nutrient content, and moisture levels) to receive customized crop recommendations tailored to their land conditions.
+- **Multi-Language Support** : Implemented Google Translate API to support multiple languages, ensuring that farmers globally can access insights and recommendations in their preferred language.
+- **User-Friendly Interface**: Created an intuitive interface using Figma for design and HTML/CSS for deployment, facilitating easy navigation and usability for farmers.
+- **Seamless Workflows**: Leveraged Python and Gradio to connect the app with Google Vision API, streamlining the process from image upload to result delivery.
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Python**: For backend processing and creating the Gradio app interface.
+- **Gradio**: For building and deploying the user interface for real-time image analysis.
+- **Roboflow**: For image processing and model inference.
+- **Gemini AI**: For advanced vision analysis and improved disease detection accuracy.
+- **Google Vision API**: For image recognition and data extraction.
+- **Google Translate API**: To provide multi-language support for a global user base.
+- **Figma**: For designing the user interface and collaborating on design assets.
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+One key challenge was ensuring the accuracy and reliability of disease detection across various crops and conditions. This was addressed by continuously refining the Roboflow model and effectively integrating it with the Google Vision API. Additionally, providing accurate crop recommendations based on soil details required thorough data analysis and user feedback, leading to valuable insights into agronomic practices.
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+PlantPal is now an essential tool for farmers, enabling them to quickly identify plant diseases, receive actionable recommendations, and obtain customized crop suggestions based on soil conditions. The app's customizable framework and multi-language support have broadened its reach, resulting in improved crop health and yield for users around the world. Ongoing enhancements to the underlying technology ensure that PlantPal remains a reliable companion for farmers seeking to optimize their agricultural practices.
+[Visit Website](https://plant-pal-two.vercel.app/)
+
+

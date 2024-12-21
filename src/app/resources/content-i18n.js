@@ -2,15 +2,15 @@ import { InlineCode } from "@/once-ui/components";
 
 const createI18nContent = (t) => {
     const person = {
-        firstName: 'Selene',
-        lastName:  'Yu',
+        firstName: 'Sanjay',
+        lastName:  'Jayachandran',
         get name() {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
         avatar:    '/images/avatar.jpg',
         location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-        languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+        languages: ['English', 'Tamil', 'Telugu']  // optional: Leave the array empty if you don't want to display languages
     }
 
     const newsletter = {
@@ -151,13 +151,7 @@ const createI18nContent = (t) => {
         }
     }
 
-    const blog = {
-        label: t("blog.label"),
-        title: t("blog.title"),
-        description: t("blog.description", {name: person.name})
-        // Create new blog posts by adding a new .mdx file to app/blog/posts
-        // All posts will be listed on the /blog route
-    }
+
 
     const work = {
         label: t("work.label"),
