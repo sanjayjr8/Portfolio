@@ -102,7 +102,7 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
             <Input
                 id="password"
                 type="password"
-                label="Enter password"
+                label="the PASSWORD IS password"
                 value={password}
                 onChange={(e) => {
                     setPassword(e.target.value);
