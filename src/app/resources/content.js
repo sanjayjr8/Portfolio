@@ -32,9 +32,9 @@ const social = [
         link: 'https://www.linkedin.com/in/sanjayj08/',
     },
     {
-        name: 'X',
-        icon: 'x',
-        link: 'https://www.linkedin.com/in/sanjayj08/',
+        name: 'Resume',
+        icon: 'globe',
+        link: 'https://drive.google.com/file/d/1GPt2nKS7H-ZXEsmplFR-v4vxaCvSu8C3/view?usp=sharing',
     },
     {
         name: 'Email',
@@ -66,11 +66,15 @@ const about = {
         display: true,
         link: 'https://cal.com'
     },
-    intro: {
-        display: true,
-        title: 'Introduction',
-        description: <>As a driven computer science engineering student, I bring a unique blend of technical proficiency, problem-solving abilities, and diverse interests to the table. While continuously expanding my skills in areas like crafting industry-oriented applications, developing powerful web solutions, and staying at the forefront of industry trends, I apply my passion for geopolitics and current affairs to approach challenges creatively. With a strong foundation in leadership, I am eager to make a meaningful impact in the dynamic world of technology.</>
-    },
+    intro: {  
+    display: true,  
+    title: 'Introduction',  
+    description: (  
+        <div style={{ textAlign: 'justify'}}>  
+            As a driven computer science engineering student, I bring a unique blend of technical proficiency, problem-solving abilities, and diverse interests to the table. While continuously expanding my skills in areas like crafting industry-oriented applications, developing powerful web solutions, and staying at the forefront of industry trends, I apply my passion for geopolitics and current affairs to approach challenges creatively. With a strong foundation in leadership, I am eager to make a meaningful impact in the dynamic world of technology.  
+        </div>  
+    )  
+},
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
@@ -107,6 +111,7 @@ const about = {
             
         ]
     },
+
 
     
     technical: {
@@ -279,7 +284,7 @@ const blog = {
 }
 
 const work = {
-    label: 'Work',
+    label: 'Projects',
     title: 'My projects',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
